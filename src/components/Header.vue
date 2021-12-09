@@ -56,10 +56,22 @@
 
    <!--SEARCH-BAR-->   
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <div class="search">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  placeholder="Search..."
+                  aria-label=""
+                  aria-describedby="basic-addon1"
+                />
+                <div class="input-group-prepend">
+                  <button class="btn" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+    </div>
     </div>
 
   </div>
@@ -74,6 +86,9 @@ name:'Header'
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+li{
+    padding-right:20px;
+}
 
 </style>
