@@ -61,7 +61,7 @@
                 <input
                   type="text"
                   class="form-control border-0"
-                  placeholder="Search..."
+                  placeholder="Search.."
                   aria-label=""
                   aria-describedby="basic-addon1"
                 />
