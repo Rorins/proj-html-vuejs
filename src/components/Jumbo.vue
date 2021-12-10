@@ -52,10 +52,10 @@ name:'Jumbo'
 <style scoped lang="scss">
 @import '@/styles/variables';
 
+
 /*FIRST COLUMN*/
 .container div:first-child{
     padding-right:140px;
-}
     h1{
         color:$violet-color;
     }
@@ -78,12 +78,17 @@ name:'Jumbo'
         width:300px;
         margin:20px 0;
     }
+}
+    
     
 
 /*SECOND COLUMN*/
 .second_column{
+    .about_me{
+        width:570px;
+        border-radius:50%;
+    }
     position:relative;
-}
     img:nth-child(2){
         position:absolute;
         top:100px;
@@ -106,13 +111,15 @@ name:'Jumbo'
         right:10px;
         z-index:-1;
     }
-.about_me{
-        width:570px;
-        border-radius:50%;
-    }
+}
+    
+
 
 /*LOGOS*/
 .logos{
     margin: 50px 0;
 }
+    
+   
+    
 </style>

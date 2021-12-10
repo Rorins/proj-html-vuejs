@@ -101,7 +101,6 @@ width:180px;
 
 .navbar-light{
 background-color: #fff;
-}
 /*LIST ITEMS*/
   li{
     padding-right:20px;
@@ -110,8 +109,8 @@ background-color: #fff;
    color:$darkGray-color;
  }
  .dropdown-arrow::after{
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-family: FontAwesome;
+  font-weight: 600;
   content: '\f078';
  }
 .user_icon i{
@@ -121,12 +120,11 @@ background-color: #fff;
   color:rgba(0, 0, 0, 0.7);
 }
 }
-
+}
 
 /*SEARCH*/
 .search{
   width: 250px;
-}
   .form-control, .btn{
     background-color: #f5f5f5;
     padding:10px 20px;
@@ -134,5 +132,7 @@ background-color: #fff;
     .fa-search{
       color:$secondary-color;
     }
+}
+  
 
 </style>
