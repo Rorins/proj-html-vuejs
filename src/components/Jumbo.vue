@@ -60,7 +60,7 @@ name:'Jumbo'
         color:$violet-color;
     }
     p{
-        color:$terziary-color;
+        color:$tertiary-color;
     }
         a{
             text-decoration: none;

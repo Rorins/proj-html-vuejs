@@ -13,7 +13,7 @@
               <div class="thumbnail">
               </div>
               <div>
-              <p>$40.00</p>
+              <p>$40.<span>00</span></p>
               <h5>Learning to Write as a Professional Author</h5>
               <span>20 Lessons</span>
               <span>50 Students</span>
@@ -23,50 +23,50 @@
               <div class="thumbnail">
               </div>
               <div>
-              <p>$40.00</p>
+              <p>Free</p>
               <h5>Learning to Write as a Professional Author</h5>
-              <span>20 Lessons</span>
-              <span>50 Students</span>
+              <span>24 Lessons</span>
+              <span>769 Students</span>
               </div>
           </div>
           <div class="col-6 d-flex">
               <div class="thumbnail">
               </div>
               <div>
-              <p>$40.00</p>
+              <p>$19.<span>00</span></p>
               <h5>Learning to Write as a Professional Author</h5>
-              <span>20 Lessons</span>
-              <span>50 Students</span>
+              <span>17 Lessons</span>
+              <span>62 Students</span>
               </div>
           </div>
           <div class="col-6 d-flex">
               <div class="thumbnail">
               </div>
               <div>
-              <p>$40.00</p>
+              <p>$26.<span>00</span></p>
               <h5>Learning to Write as a Professional Author</h5>
-              <span>20 Lessons</span>
-              <span>50 Students</span>
+              <span>14 Lessons</span>
+              <span>67 Students</span>
               </div>
           </div>
           <div class="col-6 d-flex">
               <div class="thumbnail">
               </div>
               <div>
-              <p>$40.00</p>
+              <p>$39.<span>00</span></p>
               <h5>Learning to Write as a Professional Author</h5>
-              <span>20 Lessons</span>
-              <span>50 Students</span>
+              <span>6 Lessons</span>
+              <span>51 Students</span>
               </div>
           </div>
           <div class="col-6 d-flex">
               <div class="thumbnail">
               </div>
               <div>
-              <p>$40.00</p>
+              <p>$59.<span>00</span></p>
               <h5>Learning to Write as a Professional Author</h5>
-              <span>20 Lessons</span>
-              <span>50 Students</span>
+              <span>14 Lessons</span>
+              <span>76 Students</span>
               </div>
           </div>
       </div>
@@ -96,7 +96,7 @@ section{
             color:$violet-color;
         }
         h2{
-            color:$terziary-color;
+            color:$tertiary-color;
             font-size:20px;
         }
         /*COURSES*/
@@ -104,8 +104,12 @@ section{
         padding: 40px 25px;
         p{
             color:$secondary-color;
-            font-weight:bold;
+            font-weight:bolder;
             font-size:25px;
+            span{
+                font-size:20px;
+                color:$secondary-color;
+            }
         }
         .thumbnail{
             width:200px;
@@ -118,7 +122,9 @@ section{
             color:$violet-color;
         }
         span{
-            color:$terziary-color;
+            color:$tertiary-color;
+            margin-right:10px;
+            
         }
         }
         
