@@ -2,7 +2,7 @@
   <header>
 
 <!--NAVBAR-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
 <div class="container">
 
 <!--lOGO-->
@@ -18,7 +18,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Home
         </a>
         <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -29,27 +29,27 @@
         </div> -->
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Pages
         </a>
       </li>
        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Courses
         </a>
       </li>
        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Features
         </a>
       </li>
        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Blog
         </a>
       </li>
        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Shop
         </a>
       </li>
@@ -58,9 +58,9 @@
           <i class="far fa-user-circle"></i>
           </a>
       </li>
+      </ul>
 
-   <!--SEARCH-BAR-->   
-    </ul>
+    <!--SEARCH-BAR--> 
     <div class="search">
               <div class="input-group">
                 <input
@@ -96,18 +96,43 @@ name:'Header'
 .logo{
 width:180px;
 }
-li{
-    padding-right:20px;
-}
- .navbar-light .navbar-nav .nav-link, a{
-   color:$terziary-color;
- }
-.user_icon{
-  font-size: 20px;
-}
-.fa-search{
-  color:$secondary-color;
-}
  
+ /*NAVBAR*/
+
+.navbar-light{
+background-color: #fff;
+}
+/*LIST ITEMS*/
+  li{
+    padding-right:20px;
+ }
+ .nav-link, a{
+   color:$darkGray-color;
+ }
+ .dropdown-arrow::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f078';
+ }
+.user_icon i{
+  font-size: 20px;
+  padding-top:10px;
+  &:hover{
+  color:rgba(0, 0, 0, 0.7);
+}
+}
+
+
+/*SEARCH*/
+.search{
+  width: 250px;
+}
+  .form-control, .btn{
+    background-color: #f5f5f5;
+    padding:10px 20px;
+  }
+    .fa-search{
+      color:$secondary-color;
+    }
 
 </style>
