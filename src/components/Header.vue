@@ -7,7 +7,7 @@
 
 <!--lOGO-->
 <div>
-  <a class="navbar-brand" href="#"><img src="../assets/dark-logo.png" alt="MaxCoach"></a>
+  <a class="navbar-brand" href="#"><img class=logo src="../assets/dark-logo.png" alt="MaxCoach"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -53,15 +53,20 @@
           Shop
         </a>
       </li>
+      <li>
+        <a class="user_icon" href="">
+          <i class="far fa-user-circle"></i>
+          </a>
+      </li>
 
    <!--SEARCH-BAR-->   
     </ul>
     <div class="search">
-              <div class="input-group mb-3">
+              <div class="input-group">
                 <input
                   type="text"
                   class="form-control border-0"
-                  placeholder="Search.."
+                  placeholder="Search..."
                   aria-label=""
                   aria-describedby="basic-addon1"
                 />
@@ -87,8 +92,22 @@ name:'Header'
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
+.logo{
+width:180px;
+}
 li{
     padding-right:20px;
 }
+ .navbar-light .navbar-nav .nav-link, a{
+   color:$terziary-color;
+ }
+.user_icon{
+  font-size: 20px;
+}
+.fa-search{
+  color:$secondary-color;
+}
+ 
 
 </style>
