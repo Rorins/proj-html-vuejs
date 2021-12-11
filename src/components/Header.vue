@@ -19,7 +19,7 @@
     <ul class="navbar-nav mr-auto">
       <li v-for="(link,index) in links" :key="`link${index}`" class="nav-item dropdown">
         <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{link.link}}
+          {{link}}
         </a>
       </li>
       </ul>
@@ -55,24 +55,12 @@ name:'Header',
 data(){
   return{
     links:[
-      {
-        link: "Home"
-      },
-      {
-        link: "Pages"
-      },
-      {
-        link: "Courses"
-      },
-      {
-        link: "Features"
-      },
-      {
-        link: "Blog"
-      },
-      {
-        link: "Shop"
-      }
+      "Home",
+      "Pages",
+      "Courses",
+      "Features",
+      "Blog",
+      "Shop"
     ]
   }
 }

@@ -11,6 +11,10 @@
   <SectionOne />
   <SectionTwo />
   <SectionThree />
+  <SectionFour />
+  <SectionFive />
+  <SectionSix />
+  <Footer />
   </main>
 
   </div>
@@ -23,6 +27,10 @@ import Jumbo from '@/components/Jumbo.vue';
 import SectionOne from '@/components/SectionOne.vue';
 import SectionTwo from '@/components/SectionTwo.vue';
 import SectionThree from '@/components/SectionThree.vue';
+import SectionFour from '@/components/SectionFour.vue';
+import SectionFive from '@/components/SectionFive.vue';
+import SectionSix from '@/components/SectionSix.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
@@ -32,6 +40,10 @@ export default {
     SectionOne,
     SectionTwo,
     SectionThree,
+    SectionFour,
+    SectionFive,
+    SectionSix,
+    Footer,
   }
 }
 </script>
