@@ -2,7 +2,8 @@
   <section>
       <div class="container">
           <div class="row">
-
+        
+            <!--TITLES-->
             <div class="titles text-center">
                 <h3>GREAT WORDS ABOUT MAXCOACH</h3>
                 <h1>Our <span>top learners'</span> verbatism</h1>
@@ -56,6 +57,5 @@ data(){
 .titles{
 padding:60px 0;
 }
-
 
 </style>

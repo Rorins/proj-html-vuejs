@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   <!--HEADER-->
-  <Header />
+  <Header :links="links" />
 
   <!--JUMBO-->
   <Jumbo />
@@ -44,7 +44,20 @@ export default {
     SectionFive,
     SectionSix,
     Footer,
+  },
+  //LINKS ARRAY
+  data(){
+  return{
+    links:[
+      "Home",
+      "Pages",
+      "Courses",
+      "Features",
+      "Blog",
+      "Shop"
+    ]
   }
+}
 }
 </script>
 

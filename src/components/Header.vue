@@ -52,17 +52,9 @@
 <script>
 export default {
 name:'Header',
-data(){
-  return{
-    links:[
-      "Home",
-      "Pages",
-      "Courses",
-      "Features",
-      "Blog",
-      "Shop"
-    ]
-  }
+//LINKS ARRAY FROM APP
+props:{
+  links:Array,
 }
 }
 </script>
