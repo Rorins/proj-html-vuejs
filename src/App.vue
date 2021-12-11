@@ -14,9 +14,10 @@
   <SectionFour />
   <SectionFive />
   <SectionSix />
-  <Footer />
   </main>
 
+  <!--FOOTER-->
+  <Footer />
   </div>
 </template>
 
