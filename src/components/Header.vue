@@ -17,46 +17,10 @@
 <div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
+      <li v-for="(link,index) in links" :key="`link${index}`" class="nav-item dropdown">
         <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Home
+          {{link.link}}
         </a>
-        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div> -->
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Pages
-        </a>
-      </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Courses
-        </a>
-      </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Features
-        </a>
-      </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Blog
-        </a>
-      </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Shop
-        </a>
-      </li>
-      <li>
-        <a class="user_icon" href="">
-          <i class="far fa-user-circle"></i>
-          </a>
       </li>
       </ul>
 
@@ -87,7 +51,31 @@
 
 <script>
 export default {
-name:'Header'
+name:'Header',
+data(){
+  return{
+    links:[
+      {
+        link: "Home"
+      },
+      {
+        link: "Pages"
+      },
+      {
+        link: "Courses"
+      },
+      {
+        link: "Features"
+      },
+      {
+        link: "Blog"
+      },
+      {
+        link: "Shop"
+      }
+    ]
+  }
+}
 }
 </script>
 

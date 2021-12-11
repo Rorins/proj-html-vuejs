@@ -1,5 +1,5 @@
 <template>
-  <section>
+<section>
 <img src="../assets/maxcoach-shape-05.png" alt="">
 <div class="container">
 
@@ -11,7 +11,7 @@
     </div>
 
   <!--SECOND COLUMN-->
-    <div class="info col-6">
+    <div class="info col-6 d-flex flex-column justify-content-center">
         <h3>GET STARTED <span>EFFORTLESSLY</span></h3>
         <h1>Enjoy our <span>Companionship</span></h1>
         <p>Sneek peek into what has in store for you on our online teaching and mentoring portal.Seek for some hidden hints of early-bird rewards as well.</p>
@@ -20,7 +20,7 @@
 </div>
 
 </div>
-  </section>
+</section>
 </template>
 
 <script>
@@ -33,18 +33,11 @@ name:'SectionThree'
 <style scoped lang="scss">
 @import '@/styles/variables';
 
-section{
-  height:200px;
-  position:relative;
-  img{
-    position:absolute;
-  }
-}
 
 /*FIRST-COLUMN*/
-.container div:first-child{
+.row div:first-child{
   position:relative;
-img:first-child{
+img{
     width: 100%;
 }
 .youtube_btn{
