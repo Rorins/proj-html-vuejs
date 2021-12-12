@@ -17,7 +17,7 @@
   </main>
 
   <!--FOOTER-->
-  <Footer />
+  <Footer :exploreLinks="exploreLinks" :informationLinks="informationLinks"/>
   </div>
 </template>
 
@@ -56,7 +56,22 @@ export default {
       "Features",
       "Blog",
       "Shop"
-    ]
+    ],
+    exploreLinks:[
+      "Start here ",
+      "Blog",
+      "About us",
+      "Success story",
+      "Courses",
+      "Contact us",
+    ],
+    informationLinks:[
+      "Membership",
+      "Purchase guide",
+      "Privacy Policy",
+      "Terms of services"
+    ],
+  
   }
 }
 }
