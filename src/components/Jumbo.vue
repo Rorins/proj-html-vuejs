@@ -3,12 +3,12 @@
 <div class="container">
     <div class="row">
         <!--FIRST COLUMN-->
-        <div class="col-6 d-flex flex-column justify-content-center">
+        <div class="col-6 first_column d-flex flex-column justify-content-center">
             <h1>Distant learning for further expansion</h1>
             <p>Leaning is a life-long journey that in fact we never find the terminate stop.Stop searching,enjoy the process.</p>
             <button class="button">
             <i class="fas fa-download"></i>
-            Download free guide
+            <span>Download free guide</span>
             </button>
             <p>Have questions?
                 <a href="">
@@ -21,11 +21,12 @@
        
        <!--SECOND COLUMN-->
         <div class="col-6 second_column">
-             <img class="about_me" src="../assets/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
-             <img src="../assets/maxcoach-shape-02.png" alt="">
-             <img src="../assets/maxcoach-shape-08.png" alt="">
-             <img src="../assets/maxcoach-shape-08.png" alt="">
-             <img src="../assets/maxcoach-shape-07-150x150.png" alt="">
+             <img class="about_me" src="../assets/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="girl">
+             <img src="../assets/maxcoach-shape-02.png" alt="circle">
+             <img src="../assets/maxcoach-shape-08.png" alt="square">
+             <img src="../assets/maxcoach-shape-08.png" alt="square">
+             <img src="../assets/maxcoach-shape-07-150x150.png" alt="square">
+             <i class="far fa-circle"></i>
         </div>
     </div>
  
@@ -54,7 +55,7 @@ name:'Jumbo'
 
 
 /*FIRST COLUMN*/
-.container div:first-child{
+.container .first_column{
     padding-right:140px;
     h1{
         color:$violet-color;
@@ -68,7 +69,7 @@ name:'Jumbo'
             font-weight: bold;   
             border-bottom:1px solid  #919191;
         &:hover{
-        color:rgb(58, 56, 56);
+        color:$violet-color;
         }
         }
     .fa-download{
@@ -77,6 +78,11 @@ name:'Jumbo'
     .button{
         width:300px;
         margin:20px 0;
+        span{
+            color:white;
+            font-weight: bold;
+            font-size:15px;
+        }
     }
 }
     
@@ -111,6 +117,13 @@ name:'Jumbo'
         right:10px;
         z-index:-1;
     }
+    .fa-circle{
+        position:absolute;
+        left:0;
+        bottom:90px;
+        color:#efcfba;
+        font-size:60px;
+    }
 }
     
 
@@ -118,6 +131,9 @@ name:'Jumbo'
 /*LOGOS*/
 .logos{
     margin: 50px 0;
+    img{
+        filter:brightness(1.4) grayscale(1.2)
+    }
 }
     
    

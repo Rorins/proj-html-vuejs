@@ -78,6 +78,7 @@ export default {
 </script>
 
 <style lang="scss">
+//SASS IMPORTS
 @import '@/styles/globals';
 @import '@/styles/utilities';
 </style>

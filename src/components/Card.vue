@@ -1,20 +1,21 @@
 <template>
+
   <div>
       <!--CARD-->
       <h3>{{title}}</h3>
-        <p>{{text}}</p>
+      <p>{{text}}</p>
         
-        <!--DETAILS-->
-        <div class="d-flex">
-        <img :src="require(`../assets/${image}.jpg`)" :alt="title">
+      <!--DETAILS-->
+      <div class="d-flex">
+      <img :src="require(`../assets/${image}.jpg`)" :alt="title">
 
-        <div class="details">
-        <span>{{subtext}}</span>
-        <p>{{subtextTwo}}</p>
-        </div>
-
-        </div>
+      <div class="details">
+      <span>{{subtext}}</span>
+      <p>{{subtextTwo}}</p>
       </div>
+
+        </div>
+  </div>
 
 </template>
 
@@ -48,5 +49,6 @@ img{
 
 .details{
   padding-left:20px;
+
 }
 </style>

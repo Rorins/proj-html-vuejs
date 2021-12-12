@@ -22,7 +22,8 @@
           {{link}}
         </a>
       </li>
-      </ul>
+      <li class="user_icon"><i class="far fa-user-circle"></i></li>
+    </ul>
 
     <!--SEARCH-BAR--> 
     <div class="search">
@@ -61,14 +62,13 @@ props:{
 
 <style scoped lang="scss">
 @import '@/styles/variables';
+ 
+/*NAVBAR*/
+.navbar-light{
+background-color: #fff;
 .logo{
 width:180px;
 }
- 
- /*NAVBAR*/
-
-.navbar-light{
-background-color: #fff;
 /*LIST ITEMS*/
   li{
     padding-right:20px;
@@ -80,10 +80,13 @@ background-color: #fff;
   font-family: FontAwesome;
   font-weight: 600;
   content: '\f078';
+  font-size:10px;
  }
 .user_icon i{
   font-size: 20px;
   padding-top:10px;
+  color:$darkGray-color;
+  cursor:pointer;
   &:hover{
   color:rgba(0, 0, 0, 0.7);
 }
