@@ -32,12 +32,11 @@
  
     <!--LOGOS-->
     <div class="row logos">
-        <div class="col-2"><img src="../assets/client-logo-01.png" alt=""></div>
-        <div class="col-2"><img src="../assets/client-logo-02.png" alt=""></div>
-        <div class="col-2"><img src="../assets/client-logo-03.png" alt=""></div>
-        <div class="col-2"><img src="../assets/client-logo-04.png" alt=""></div>
-        <div class="col-2"><img src="../assets/client-logo-05.png" alt=""></div>
-        <div class="col-2"><img src="../assets/client-logo-06.png" alt=""></div>
+        <div v-for="(logo,index) in logos" :key="`logo${index}`" class="col-2">
+            <img :src="require(`../assets/${logo}.png`)" alt="">
+        </div>
+    
+       
     </div>
 
 </div>
@@ -46,7 +45,19 @@
 
 <script>
 export default {
-name:'Jumbo'
+name:'Jumbo',
+data(){
+    return{
+        logos:[
+            "client-logo-01",
+            "client-logo-02",
+            "client-logo-03",
+            "client-logo-04",
+            "client-logo-05",
+            "client-logo-06"
+        ]
+    }
+}
 }
 </script>
 
