@@ -33,7 +33,7 @@
     <!--LOGOS-->
     <div class="row logos">
         <div v-for="(logo,index) in logos" :key="`logo${index}`" class="col-2">
-            <img :src="require(`../assets/${logo}.png`)" alt="">
+            <img :src="require(`../assets/${logo}.png`)" alt="logo">
         </div>
     
        

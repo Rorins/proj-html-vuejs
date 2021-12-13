@@ -11,3 +11,10 @@
     background-color: #3f3a64;
   }
 }
+
+.border_color {
+  &:hover {
+    border: #dbdbdb 10px solid;
+    cursor: pointer;
+  }
+}
