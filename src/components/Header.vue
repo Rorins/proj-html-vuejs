@@ -2,7 +2,7 @@
   <header>
 
 <!--NAVBAR-->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 <div class="container">
 
 <!--lOGO-->

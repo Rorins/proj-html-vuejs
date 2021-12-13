@@ -49,6 +49,12 @@
                 <i class="far fa-copyright"></i>
                 Maxcoach,All Rights Reserved
             </span>
+            <!--ARROW BUTTON-->
+            <a href="">
+                <div class="arrow_button d-flex align-items-center justify-content-center">
+                <i class="fas fa-arrow-up"></i>
+                </div>
+            </a>
             </div>
         </div>
 
@@ -83,6 +89,7 @@ data(){
 /*FOOTER*/
 footer{
     background-color:#f8f8f8;
+    position:relative;
     div{
         padding:30px 0;
     }
@@ -101,6 +108,7 @@ ul{
             }
     }
 }
+/*SOCIAL*/
 .social a{
     padding-right:20px;
     i{
@@ -111,6 +119,15 @@ ul{
 .copyright span{
     color:$tertiary-color;
 }
+}
+.arrow_button{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    background-color:$primary-color;
+    position:absolute;
+    right:10px;
+    color:white;
 }
 
 </style>
