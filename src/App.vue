@@ -14,6 +14,7 @@
   <SectionFour />
   <SectionFive />
   <SectionSix />
+  <SectionSeven />
   </main>
 
   <!--FOOTER-->
@@ -31,6 +32,7 @@ import SectionThree from '@/components/SectionThree.vue';
 import SectionFour from '@/components/SectionFour.vue';
 import SectionFive from '@/components/SectionFive.vue';
 import SectionSix from '@/components/SectionSix.vue';
+import SectionSeven from '@/components/SectionSeven.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
@@ -44,6 +46,7 @@ export default {
     SectionFour,
     SectionFive,
     SectionSix,
+    SectionSeven,
     Footer,
   },
   //LINKS ARRAY
