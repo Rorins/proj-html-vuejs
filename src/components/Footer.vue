@@ -3,7 +3,7 @@
       <div class="container">
 
         <!--FOOTER LINKS-->
-        <div class="footer row">
+        <div class="footer_links row">
 
             <!--ADDRESS-->
             <div class="col-6">
@@ -41,7 +41,14 @@
                     </a>
                     </li>
                 </ul>
+            </div>
 
+            <!--COPYRIGHT-->
+            <div class="copyright text-center">
+            <span>
+                <i class="far fa-copyright"></i>
+                Maxcoach,All Rights Reserved
+            </span>
             </div>
         </div>
 
@@ -73,15 +80,13 @@ data(){
 <style scoped lang="scss">
 @import '@/styles/variables';
 
+/*FOOTER*/
 footer{
     background-color:#f8f8f8;
     div{
-        padding:20px 0;
+        padding:30px 0;
     }
-}
-
-/*FOOTER*/
-.footer{
+    .footer_links{
 li{
     color:$tertiary-color;
 }
@@ -102,7 +107,10 @@ ul{
         font-size:25px;
     }
 }
-    
+}
+.copyright span{
+    color:$tertiary-color;
+}
 }
 
 </style>
