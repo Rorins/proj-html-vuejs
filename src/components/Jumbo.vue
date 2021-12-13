@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="home">
 <div class="container">
     <div class="row">
         <!--FIRST COLUMN-->

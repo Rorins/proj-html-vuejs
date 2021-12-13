@@ -50,7 +50,7 @@
                 Maxcoach,All Rights Reserved
             </span>
             <!--ARROW BUTTON-->
-            <a href="">
+            <a href="#home">
                 <div class="arrow_button d-flex align-items-center justify-content-center">
                 <i class="fas fa-arrow-up"></i>
                 </div>
