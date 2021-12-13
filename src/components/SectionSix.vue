@@ -19,7 +19,8 @@
               </div>
               
               <!--CARDS-->
-              <div class="col-4 card">
+              <div class="col-4 card_container">
+                  <div class="card">
                       <div><img src="../assets/artist-blog-03-480x352.jpeg" alt=""></div>
                       <div class="description">
                       <h3>ARTIST</h3>
@@ -27,15 +28,18 @@
                       <span><i class="far fa-calendar"></i>May 15,2020</span>
                       <span><i class="far fa-eye"></i>688 views</span>
                       </div>
+                    </div>
               </div>
 
-              <div class="col-4 card">
+              <div class="col-4 card_container">
+                      <div class="card">
                       <div><img src="../assets/artist-blog-01-480x352.jpg" alt=""></div>
                       <div class="description">
                       <h3>ARTIST</h3>
                       <h2>Brush Strokes Energize Trees in Paintings</h2>
                       <span><i class="far fa-calendar"></i>May 15,2020</span>
                       <span><i class="far fa-eye"></i>688 views</span>
+                      </div>
                       </div>
               </div>
           </div>
@@ -86,16 +90,26 @@ ul{
 }
 
 /*CARDS*/
-.card{
-    background-color:white;
+.card_container{
+    padding:0;
+    .card{
+        background-color:white;
+        border:30px solid #f4f0ec;
+        img{
+    width: 100%;
+    object-fit:cover,
+    }
     .description{
     padding:30px;
+    h2{
+        color:$violet-color;;
+    }
     h2,h3{
-        color:$violet-color;
         font-size:20px;
     }
     h3,span{
         font-weight:300;
+        color:$tertiary-color;
     }
     span{
         color:$tertiary-color;
@@ -106,10 +120,8 @@ ul{
         }
     }
     } 
-}
-img{
-    width: 100%;
-    object-fit:cover,
     }
+}
+
 
 </style>
