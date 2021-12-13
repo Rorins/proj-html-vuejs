@@ -1,33 +1,15 @@
 <template>
   <section>
       <div class="container">
+
+          <!--NUMBERS-->
           <div class="row text-center">
-            
-            <!--NUMBERS-->
-            <div class="col-3">
-                <h3>Successfully trained</h3>
-                <h2>1790</h2>
-                <p>ENROLLED LEARNERS</p>
+            <div v-for="(data,index) in data " :key="`data${index}`" class="col-3">
+                <h3>{{data.title}}</h3>
+                <h2>{{data.number}}</h2>
+                <p>{{data.subtitle}}</p>
             </div>
 
-            <div class="col-3">
-                <h3>Proudly Received</h3>
-                <h2>19</h2>
-                <p>COUNTRYWIDE AWARDS</p>
-            </div>
-
-            <div class="col-3">
-                <h3>Firmly Established</h3>
-                <h2>24</h2>
-                <p>LOCAL BRANCHES</p>
-            </div>
-
-            <div class="col-3">
-                <h3>Getting Featured on</h3>
-                <h2>1090</h2>
-                <p>BLOG POSTS</p>
-            </div>
-            
           </div>
       </div>
   </section>
@@ -35,7 +17,34 @@
 
 <script>
 export default {
-name:'SectionFive'
+name:'SectionFive',
+data(){
+    return{
+        data:[
+            {
+                title:"Successfully trained",
+                number:"1790",
+                subtitle:"ENROLLED LEARNERS",
+            },
+            {
+                title:"Proudly received",
+                number:"19",
+                subtitle:"COUNTRYWIDE AWARDS",
+            },
+            {
+                title:"Firmly Established",
+                number:"24",
+                subtitle:"LOCAL BRANCHES",
+            },
+            {
+                title:"Getting Featured on",
+                number:"1090",
+                subtitle:"BLOG POSTS",
+            },
+
+        ]
+    }
+}
 }
 </script>
 
