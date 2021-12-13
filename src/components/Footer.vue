@@ -15,10 +15,9 @@
                 </ul>
                 <!--SOCIAL-->
                     <ul class="d-flex social">
-                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li v-for="(link,index) in social" :key="`link${index}`">
+                            <a href=""><i :class="link"></i></a>
+                            </li>
                     </ul>
             </div>
 
@@ -57,6 +56,16 @@ name:'Footer',
 props:{
 exploreLinks:Array,
 informationLinks:Array,
+},
+data(){
+    return{
+        social:[
+            "fab fa-facebook-square",
+            "fab fa-twitter-square",
+            "fab fa-instagram",
+            "fab fa-linkedin",
+        ]
+    }
 }
 }
 </script>
