@@ -47,6 +47,7 @@
                     </a>
                     </li>
                 </ul>
+
             </div>
         </div>
 
@@ -109,6 +110,9 @@ ul{
     a{
         color:$tertiary-color;
         text-decoration: none;
+        &:hover {
+            color:$violet-color;
+            }
     }
 }
     

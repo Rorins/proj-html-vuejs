@@ -12,7 +12,7 @@
       <!--COURSES-->
       <div class="row courses">
           <div class="col-6 border_color d-flex">
-              <div class="thumbnail">
+              <div class="thumbnail bg_1">
               </div>
               <div>
               <p>$40.<span>00</span></p>
@@ -23,7 +23,7 @@
           </div>
 
           <div class="col-6 border_color d-flex">
-              <div class="thumbnail">
+              <div class="thumbnail bg_2">
               </div>
               <div>
               <p>Free</p>
@@ -34,7 +34,7 @@
           </div>
 
           <div class="col-6 border_color d-flex">
-              <div class="thumbnail">
+              <div class="thumbnail bg_3">
               </div>
               <div>
               <p>$19.<span>00</span></p>
@@ -45,7 +45,7 @@
           </div>
           
           <div class="col-6 border_color d-flex">
-              <div class="thumbnail">
+              <div class="thumbnail bg_4">
               </div>
               <div>
               <p>$26.<span>00</span></p>
@@ -55,7 +55,7 @@
               </div>
           </div>
           <div class="col-6 border_color d-flex">
-              <div class="thumbnail">
+              <div class="thumbnail bg_5">
               </div>
               <div>
               <p>$39.<span>00</span></p>
@@ -65,7 +65,7 @@
               </div>
           </div>
           <div class="col-6 border_color d-flex">
-              <div class="thumbnail">
+              <div class="thumbnail bg_6">
               </div>
               <div>
               <p>$59.<span>00</span></p>
@@ -119,9 +119,28 @@ section{
         .thumbnail{
             width:200px;
             height: 200px;
-            background-image: url(../assets/course-02-480x298.jpg);
             border-radius:50%;
             background-position: center;
+            background-size:300px;
+        }
+        /*BACKGROUNDS*/
+        .bg_1{
+            background-image: url(../assets/course-02-480x298.jpg);
+        }
+        .bg_2{
+            background-image: url(../assets/stock-full-hd-03-480x298.jpg);
+        }
+        .bg_3{
+            background-image: url(../assets/stock-full-hd-04-480x298.jpg);
+        }
+        .bg_4{
+            background-image: url(../assets/stock-full-hd-06-480x298.jpg);
+        }
+        .bg_5{
+            background-image: url(../assets/course-featured-image-01-480x298.jpg);
+        }
+        .bg_6{
+            background-image: url(../assets/stock-full-hd-05-480x298.jpg);
         }
         h5{
             color:$violet-color;
