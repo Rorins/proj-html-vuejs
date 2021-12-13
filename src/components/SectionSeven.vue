@@ -9,6 +9,8 @@
               <h3>Enter your email address to register to our newsletter subscription delivered on a regular basis!</h3>
               <!--DETAILS-->
               <img class="circle" src="../assets/maxcoach-shape-02.png" alt="circle">
+              <img class="square" src="../assets/maxcoach-shape-09.png" alt="square">
+              <i class="far fa-circle"></i>
               
               <!--SUBSCRIBE BUTTON-->
               <div class="input-group mb-3">
@@ -48,13 +50,26 @@ h3{
     font-size:20px;
     padding-bottom:40px;
 }
+/*DECORATION*/
 .circle{
     position:absolute;
     right:20px;
     width:160px;
 }
-
-
+.square{
+  position:absolute;
+  right:20px;
+  top:10px;
+  width:230px;  
+  z-index:-1;
+}
+.fa-circle{
+ position:absolute;
+ right:600px;
+ bottom:220px;
+ color:#8fd6ca;
+ font-size:60px;
+}
 /*SUBSCRIBE BUTTON*/
 .input-group{
     width: 600px;
