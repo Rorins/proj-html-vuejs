@@ -10,11 +10,10 @@
                   
                   <!--CARD WITH LIST-->
                   <ul>
-                      <li><i class="fas fa-arrow-right"></i>Become a better Blogger:Content Planning</li>
-                      <li><i class="fas fa-arrow-right"></i>Promoting your Online Business on Pinterest</li>
-                      <li><i class="fas fa-arrow-right"></i>Gamification and Game-Based Learing</li>
-                      <li><i class="fas fa-arrow-right"></i>Designing an Online Course from Expert's Perspective</li>
-                      <li><i class="fas fa-arrow-right"></i>Why Online Courses are the Future of Education</li>
+                      <li v-for="(element,index) in list " :key="`element${index}`">
+                        <i :class="element.icon"></i>
+                        <span>{{element.listItem}}</span>
+                      </li>
                   </ul>
               </div>
               
@@ -49,7 +48,33 @@
 
 <script>
 export default {
-name:'SectionSix'
+name:'SectionSix',
+data(){
+    return{
+        list:[
+            {
+                icon:"fas fa-arrow-right",
+                listItem:"Become a better Blogger:Content Planning",
+            },
+            {
+                icon:"fas fa-arrow-right",
+                listItem:"Promoting your Online Business on Pinterest",
+            },
+             {
+                icon:"fas fa-arrow-right",
+                listItem:"Gamification and Game-Based Learing",
+            },
+             {
+                icon:"fas fa-arrow-right",
+                listItem:"Designing an Online Course from Expert's Perspective",
+            },
+             {
+                icon:"fas fa-arrow-right",
+                listItem:"Why Online Courses are the Future of Education",
+            }
+        ]
+    }
+}
 }
 </script>
 
