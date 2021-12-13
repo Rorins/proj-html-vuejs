@@ -6,7 +6,7 @@
       <p>{{text}}</p>
         
       <!--DETAILS-->
-      <div class="d-flex">
+      <div class=" d-flex">
       <img :src="require(`../assets/${image}.jpg`)" :alt="title">
 
       <div class="details">
@@ -14,7 +14,7 @@
       <p>{{subtextTwo}}</p>
       </div>
 
-        </div>
+      </div>
   </div>
 
 </template>
@@ -35,8 +35,13 @@ props:{
 <style scoped lang="scss">
 @import '@/styles/variables';
 
+div{
+  background-color:white;
+  padding:30px;
+}
 h3{
 color:$violet-color;
+font-size:20px;
 }
 p{
   color:$tertiary-color;
@@ -45,6 +50,7 @@ p{
 img{
   border-radius:50%;
   width:100px;
+  height:100px;
 }
 
 .details{

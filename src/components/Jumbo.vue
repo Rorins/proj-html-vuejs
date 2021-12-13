@@ -87,7 +87,6 @@ data(){
         padding-right:10px;
     }
     .button{
-        width:300px;
         margin:20px 0;
         span{
             color:white;

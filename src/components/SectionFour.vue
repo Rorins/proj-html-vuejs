@@ -28,6 +28,18 @@
 <div></div>
 </div>
 
+            <!--TITLESBOTTOM-->
+            <div class="titles_bottom text-center">
+                <h3>Start today for getting <span>Online Certification</span></h3>
+                <h1>You can be your own guiding star with our help!</h1>
+                <button class="button">Get started now</button>
+
+            <!--DETAILS-->
+                <img class="circle" src="../assets/maxcoach-shape-02.png" alt="circle">
+                <img class="stripes" src="../assets/maxcoach-shape-01.png" alt="stripes">
+                <i class="far fa-circle"></i>
+                
+            </div>
     </div>
   </section>
 </template>
@@ -73,6 +85,11 @@ data(){
 <style scoped lang="scss">
 @import '@/styles/variables';
 
+section{
+    background-color:#f8f8f8;
+}
+
+/*TITLES*/
 .titles{
 padding:60px 0;
 h3{
@@ -88,15 +105,58 @@ h1{
     }
 }
 
+/*CIRCLE BAR*/
 .circle_bar{
-    margin-top:80px;
+    padding:80px 0;
     > div{
         background-color:$tertiary-color;
         width: 10px;
         height:10px;
         border-radius:50%;
         margin:10px;
+        &:hover {
+        background-color:$violet-color;
+        width:15px;
+        height:15px;
+        cursor: pointer;
         }
+        }
+}
+
+/*TITLES*/
+.titles_bottom{
+padding:50px 0;
+position:relative;
+
+/*DETAILS*/
+.circle{
+    position:absolute;
+    right:20px;
+}
+.stripes{
+    position:absolute;
+    left:6px;
+}
+.fa-circle{
+        position:absolute;
+        left:0;
+        bottom:220px;
+        color:#efcfba;
+        font-size:60px;
+    }
+h3{
+    font-size:20px;
+    span{
+        color:$primary-color;
+        font-weight:300;
+    }
+}
+h1, h3{
+    color:$violet-color;   
+    }
+button{
+    margin:60px 0;
+}
 }
 
 </style>

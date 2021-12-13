@@ -14,6 +14,7 @@
 
   <!--SECOND COLUMN-->
     <div class="info col-4 d-flex flex-column justify-content-center">
+       <i class="far fa-circle"></i>
         <h3>GET STARTED <span>EFFORTLESSLY</span></h3>
         <h1>Enjoy our <span>Companionship</span></h1>
         <p>Sneek peek into what has in store for you on our online teaching and mentoring portal.Seek for some hidden hints of early-bird rewards as well.</p>
@@ -48,7 +49,12 @@ name:'SectionThree'
     position:absolute;
     top:50%;
     left:50%;
+    &:hover {
+    cursor: pointer;
+    width:130px;
   }
+  }
+  
 /*DECORATION*/
   img:nth-child(1){
     width:180px;
@@ -70,6 +76,14 @@ name:'SectionThree'
 
 /*SECOND-COLUMN*/
 .info {
+  position:relative;
+.fa-circle{
+        position:absolute;
+        left:0;
+        top:80px;
+        color:#efcfba;
+        font-size:60px;
+    }
 h3 {
   font-size:20px;
   color:$tertiary-color;
@@ -88,6 +102,10 @@ p a{
   text-decoration: none;
   color:$primary-color;
   border-bottom:1px solid gray;
+  &:hover {
+    cursor: pointer;
+    color:$violet-color;
+  }
 }
 }
 </style>

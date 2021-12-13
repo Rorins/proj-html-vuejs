@@ -24,8 +24,8 @@
                       <div class="description">
                       <h3>ARTIST</h3>
                       <h2>Brush Strokes Energize Trees in Paintings</h2>
-                      <span>May 15,2020</span>
-                      <span>688 views</span>
+                      <span><i class="far fa-calendar"></i>May 15,2020</span>
+                      <span><i class="far fa-eye"></i>688 views</span>
                       </div>
               </div>
 
@@ -34,8 +34,8 @@
                       <div class="description">
                       <h3>ARTIST</h3>
                       <h2>Brush Strokes Energize Trees in Paintings</h2>
-                      <span>May 15,2020</span>
-                      <span>688 views</span>
+                      <span><i class="far fa-calendar"></i>May 15,2020</span>
+                      <span><i class="far fa-eye"></i>688 views</span>
                       </div>
               </div>
           </div>
@@ -79,6 +79,9 @@ ul{
     li{
         color:$violet-color;
         padding-bottom:20px;
+        i{
+            padding-right:15px;
+        }
     }
 }
 
@@ -87,14 +90,21 @@ ul{
     background-color:white;
     .description{
     padding:30px;
-    h3,span{
-        color:$tertiary-color;
-        font-size:20px;
-    }
-    h2{
+    h2,h3{
         color:$violet-color;
         font-size:20px;
-    }   
+    }
+    h3,span{
+        font-weight:300;
+    }
+    span{
+        color:$tertiary-color;
+        font-size:20px;
+        padding:10px;
+        i{
+            padding-right:10px;
+        }
+    }
     } 
 }
 img{

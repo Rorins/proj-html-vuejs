@@ -16,7 +16,7 @@
           </div>
 
         <!--FOOTER LINKS-->
-        <div class="row">
+        <div class="footer_links row">
 
             <div class="col-6">
                 <h3>Address</h3>
@@ -67,8 +67,10 @@ informationLinks:Array,
 
 <style scoped lang="scss">
 @import '@/styles/variables';
+
+/*SUBSCRIBE*/
 .subscribe{
-padding:60px;
+padding:80px 350px;
 h2{
     color:$violet-color;
     span{
@@ -78,10 +80,38 @@ h2{
 h3{
     color:$tertiary-color;
     font-size:20px;
+    padding-bottom:40px;
 }
+/*SUBSCRIBE BUTTON*/
 .input-group{
     width: 600px;
+    input{
+        background-color:#f5f5f5;
+        border:none;
+        padding:10px;
+    }
+    button{
+        background-color:$secondary-color;
+        border:none;
+        color:white;
+        padding:10px;
+    }
 }
+}
+
+.footer_links{
+li{
+    color:$tertiary-color;
+}
+ul{
+    padding-left:0;
+    list-style-type: none;
+    a{
+        color:$tertiary-color;
+        text-decoration: none;
+    }
+}
+    
 }
 
 </style>

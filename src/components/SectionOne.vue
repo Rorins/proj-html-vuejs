@@ -129,13 +129,15 @@ section{
         span{
             color:$tertiary-color;
             margin-right:10px;
+            i{
+                padding-right:5px;
+            }
             
         }
         }
         
     /*BUTTON*/
     & div:nth-last-child(1) button{
-        width:260px;
         .fa-arrow-right{
             padding-left:5px;
         }
