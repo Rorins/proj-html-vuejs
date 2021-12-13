@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div class="card">
       <!--CARD-->
       <h3>{{title}}</h3>
       <p>{{text}}</p>
@@ -35,9 +35,16 @@ props:{
 <style scoped lang="scss">
 @import '@/styles/variables';
 
-div{
+.card{
   background-color:white;
   padding:30px;
+  transition:0.5 ease;
+  &:hover {
+    transform:scale(1.2);
+    cursor:pointer;
+    z-index:1;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
 }
 h3{
 color:$violet-color;
