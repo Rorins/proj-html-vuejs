@@ -115,9 +115,7 @@ h1{
         border-radius:50%;
         margin:10px;
         &:hover {
-        background-color:$violet-color;
-        width:15px;
-        height:15px;
+        background-color:$violet-color;;
         cursor: pointer;
         }
         }
