@@ -23,6 +23,7 @@
         <!--FOOTER LINKS-->
         <div class="footer_links row">
 
+            <!--ADDRESS-->
             <div class="col-6">
                 <h3>Address</h3>
                 <ul>
@@ -30,6 +31,13 @@
                     <li>+1(305)547-9909(9am-5pm EST,Monday-Friday)</li>
                     <li>support@maxcoach-com</li> 
                 </ul>
+                <!--SOCIAL-->
+                    <ul class="d-flex social">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
             </div>
 
             <div class="col-3">
@@ -113,6 +121,7 @@ h3{
 }
 }
 
+/*FOOTER BUTTON*/
 .footer_links{
 li{
     color:$tertiary-color;
@@ -126,6 +135,12 @@ ul{
         &:hover {
             color:$violet-color;
             }
+    }
+}
+.social a{
+    padding-right:20px;
+    i{
+        font-size:25px;
     }
 }
     
